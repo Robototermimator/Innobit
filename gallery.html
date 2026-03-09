@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnoBit | Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html"><img class="logo" src="assets/images/iblogo.png" alt="InnoBit logo" /><h1 class="site-title">InnoBit Technologies</h1></a>
+      <div class="button-row"><button class="btn" onclick="signUp()">Sign up</button><button class="btn secondary" onclick="order()">Order</button></div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation"><div class="container"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html" aria-current="page">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="section-card">
+      <h2 class="section-title">Project Gallery</h2>
+      <p class="subtle">A snapshot of our engineering culture and delivery environment.</p>
+      <div id="gallery" class="gallery">
+        <figure class="gallery-item"><img src="assets/gallery/gallery1.jpg" alt="Office collaboration" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery2.jpg" alt="Team planning session" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery3.jpg" alt="Software architecture workshop" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery4.jpg" alt="Engineers coding on laptops" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery5.jpg" alt="Cloud and infrastructure visualization" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery6.jpg" alt="Customer support operation" /></figure>
+        <figure class="gallery-item"><img src="assets/gallery/gallery7.jpg" alt="Project presentation meeting" /></figure>
+        <figure class="gallery-item"><img src="assets/images/training.png" alt="Team training session" /></figure>
+      </div>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-modal="true" role="dialog">
+    <button class="close" aria-label="Close image">×</button>
+    <button class="prev" aria-label="Previous image">‹</button>
+    <img id="lightbox-img" class="lightbox-content" alt="" />
+    <button class="next" aria-label="Next image">›</button>
+  </div>
+
+  <footer class="site-footer"><div class="container footer-bottom">© 2025 InnoBit Technologies.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

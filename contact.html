@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnoBit | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html"><img class="logo" src="assets/images/iblogo.png" alt="InnoBit logo" /><h1 class="site-title">InnoBit Technologies</h1></a>
+      <div class="button-row"><button class="btn" onclick="signUp()">Sign up</button><button class="btn secondary" onclick="order()">Order</button></div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation"><div class="container"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></div></nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="section-card">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Business contact</h3>
+          <p><strong>Email:</strong> info@innobit.com</p>
+          <p><strong>Phone:</strong> +27 68 084 7622</p>
+          <p><strong>Address:</strong> 50 Long Street, Cape Town</p>
+          <p><strong>Hours:</strong> Mon–Fri, 09:00–18:00</p>
+        </article>
+        <article class="card">
+          <h3>Talk to our team</h3>
+          <form id="contact-form" novalidate>
+            <div class="field"><label for="contact-name">Name</label><input id="contact-name" name="name" required /><small class="field-error" data-error-for="contact-name"></small></div>
+            <div class="field"><label for="contact-email">Email</label><input id="contact-email" type="email" name="email" required /><small class="field-error" data-error-for="contact-email"></small></div>
+            <div class="field"><label for="contact-subject">Subject</label><input id="contact-subject" name="subject" required /><small class="field-error" data-error-for="contact-subject"></small></div>
+            <div class="field"><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="5" required></textarea><small class="field-error" data-error-for="contact-message"></small></div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-bottom">© 2025 InnoBit Technologies.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
