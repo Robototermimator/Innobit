@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnoBit | Enquiry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="index.html"><img class="logo" src="assets/images/iblogo.png" alt="InnoBit logo" /><h1 class="site-title">InnoBit Technologies</h1></a>
+      <div class="button-row"><button class="btn" onclick="signUp()">Sign up</button><button class="btn secondary" onclick="order()">Order</button></div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation"><div class="container"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></div></nav>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="section-card">
+      <h2 class="section-title">Product & Service Enquiry</h2>
+      <p class="subtle">Tell us what you need and our team will respond with a recommendation.</p>
+      <form id="enquiryForm" novalidate>
+        <div class="field">
+          <label for="fullname">Full name</label>
+          <input id="fullname" name="fullname" autocomplete="name" required />
+          <small class="field-error" data-error-for="fullname"></small>
+        </div>
+        <div class="field">
+          <label for="enquiry-email">Email</label>
+          <input id="enquiry-email" type="email" name="email" autocomplete="email" required />
+          <small class="field-error" data-error-for="enquiry-email"></small>
+        </div>
+        <div class="field">
+          <label for="enquiry-phone">Phone</label>
+          <input id="enquiry-phone" name="phone" autocomplete="tel" required />
+          <small class="field-error" data-error-for="enquiry-phone"></small>
+        </div>
+        <div class="field">
+          <label for="enquiryType">Type</label>
+          <select id="enquiryType" name="enquiryType" required>
+            <option value="">Select one</option>
+            <option>Product</option>
+            <option>Service</option>
+            <option>Partnership</option>
+          </select>
+          <small class="field-error" data-error-for="enquiryType"></small>
+        </div>
+        <div class="field">
+          <label for="details">Details</label>
+          <textarea id="details" name="details" rows="4" required></textarea>
+          <small class="field-error" data-error-for="details"></small>
+        </div>
+        <button class="btn" type="submit">Submit enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-bottom">© 2025 InnoBit Technologies.</div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
